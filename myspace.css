@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.nav-left , .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right{
+    gap: 5.1em;
+}
+
+.nav__logo{
+    width: 100px;
+    object-fit: contain;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    /* transition: all 2s ease-in-out; */
+}
+
+.nav-link{
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.movies a{
+    display: flex;
+}
+
+.dropdown-icon {
+    font-size: 10px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.movies:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+/* Dropdown option */
+
+.nav-link .dropdown li{
+    display: block;
+}
+
+.nav-link .dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 70px;
+}
+
+.nav-link a:hover{
+    color: #E39F33;
+    border-radius: 0.5rem;
+}
+.movies:hover ul.dropdown{ 
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+    font-size: 18px;
+} 
+/* Add these styles to your existing CSS file or create a new one */
+.mySpace-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px; /* Adjust as needed */
+    background-color:#453317; /* Add a background color for better visibility */
+}
+ 
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    font-size: 35px;
+    color: #f5f5f5; /* Adjust the color as needed */
+    margin-right: 10px;
+    
+}
+
+.username {
+    color:#f5f5f5;
+    font-weight: bold;
+}
+
+.qr-icon {
+    font-size: 50px;
+    color: white; /* Adjust the color as needed */
+    cursor: pointer;
+}
+
+
+.btn {
+    appearance: none;
+    background-color: transparent;
+    border: 0.12em solid white;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 550;
+    line-height: normal;
+    margin: 0;
+    margin-right: 20px;
+    min-height: 2.8em;
+    min-width: 95px;
+    outline: none;
+    padding: 0.1em 1.9em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .btn:disabled {
+    pointer-events: none;
+   }
+   
+   .btn:hover {
+    color: #E39F33;
+    background-color: #000000;
+    border: 0.12em solid #E39F33;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+   }
+   /* footer */
+   footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.btnSignUp {
+    padding-top: 10px;
+    background-color: transparent;
+    border: 0.12em solid white;
+    border-radius: 0.4em;
+    color: white;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 550;
+    line-height: normal;
+
+    min-height: 2.8em;
+    min-width: 95px;
+    padding: 0.1em 1.9em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+   
+.btnSignUp:disabled {
+    pointer-events: none;
+}
+   
+.btnSignUp:hover {
+    color: #E39F33;
+    background-color: #000000;
+    border: 0.12em solid #E39F33;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+/* Follow Us */
+
+.followUs{
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+}
+
+.title{
+    display: inline-block;
+    padding-left:20px;
+}
+
+.followUs li{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+}
+
+.followUs a i{
+    transition: all 0.3s ;
+}
+
+a:hover i {
+    color:#E39F33 !important;
+    transform: scale(1.2);
+}
+
+.nav__logoFooter{
+    width: 75px;
+    object-fit: contain;
+}
+
+.copyrightFooter {
+    color: white;
+    font-size: 10px;
+    width: 70vh;
+    text-align: center;
+    padding: 15px; 
+}
+/* Posters */
+
+.row{
+    color: white;
+    margin-left:20px ;
+}
+
+.firstRow{
+    padding-top: 20px;
+}
+
+.titles{
+    padding-left: 20px;
+    position: relative;
+}
+.playlist-icon {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white; /* Adjust the color as needed */
+}
+
+/* playlist */
+
+.leftBtn{
+    position: absolute;
+    top: 380px;
+    left: 15px;
+    z-index: 2;
+}
+
+.fadeRight{
+    position: absolute;
+    width: 55px;
+    height: 200px;
+    top: 380px;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.rightBtn{
+    position: absolute;
+    top: 380px;
+    right: 15px;
+    z-index: 2;
+}
+
+.fadeLeft{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 260px;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 30px;
+    margin-left: 10px;
+    transition: scroll-behavior 450ms;
+}
+.row_poster:hover{
+    transform:scale(1.08);
+
+}
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+.row_posterLarge{
+    max-height: 250px;
+    border-radius: 50px;
+    padding-right: 10px;
+}
+.row_posterLarge:hover{
+    transform: scale(1.09);
+}
+/* Add these styles to your existing CSS file or create a new one */
+.settings-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color:none; /* Adjust the background color as needed */
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.settings-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white; /* Adjust the icon color as needed */
+}
+
+.settings-text {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.settings-text:hover {
+    color: #E39F33; /* Adjust the color on hover */
+}
+
+.settings-line {
+    border: 0.5px solid white; /* Adjust the line color as needed */
+    margin: 10px 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.go-to-settings-button {
+    background-color: transparent;
+    border: none;
+    color:white; /* Adjust the button color as needed */
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: left;
+   margin-left: auto;
+    
+}
+
+.go-to-settings-button i {
+    font-size: 15px;
+}
+.clickable {
+    cursor: pointer;
+}
+
+.qr-link {
+    text-decoration: none; /* Remove the default underline for links */
+    transition: color 0.3s ease-in-out; /* Add a smooth color transition */
+font-size: 30px;
+align-items: center;
+} 
+
+.qr-link:hover {
+    color: #E39F33; /* Adjust the color on hover */
+}
+
+#continue-icon,
+        #pause-icon {
+            position: absolute;
+            bottom: 100px;
+            right: 70px;
+            cursor: pointer;
+            color: #feffff ;
+            font-size: 50px ;
+        }
+
+        #pause-icon {
+            display:none;
+        }
+
+        #progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0PX;
+            top: 200px;
+            width: 168px;
+            height: 8px;
+            background-color: #fdfbfb;
+        }
+
+        #progress-indicator {
+            height: 100%;
+            background-color: #251e1e;
+            width: 0;
+        }
+
+        #video-poster {
+            position: relative;
+            max-width: 600px;
+            width: 30%;
+        }
+
+        
+
+
+

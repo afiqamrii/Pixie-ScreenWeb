@@ -1,0 +1,221 @@
+.header{
+	height: 60px;
+    width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 2;
+}
+
+/*Slideshow*/
+.slider{
+	position: relative;
+	width: 100%;
+}
+.myslide{
+	height: 100%;
+}
+
+.prev, .next{
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	user-select: none;
+}
+
+.prev:hover, .next:hover{
+	color: brown; 
+}
+
+.next{
+	right: 0;
+}
+
+.dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 20px;
+	cursor: pointer;
+}
+
+.dot{
+	display: inline-flex;
+	position: right;
+	width: 15px;
+	height: 15px;
+	border: 3px solid white;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.active, .dot:hover{
+	border-color: brown; 
+}
+
+.txt{
+	position: absolute;
+	letter-spacing: 2px;
+	line-height: 30px;
+	top: 80%;
+	left: 3%;
+}
+
+.txt h1{
+	color: crimson;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.txt p{
+	color: ghostwhite;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.container {
+	position:sticky ;
+	width: auto;
+  }
+  
+.image {
+	display: block;
+	width: auto;
+	height: auto;
+}
+  
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: auto;
+	width: auto;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+  
+.container:hover .overlay {
+	opacity: 1;
+}
+  
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+/* Button to swipe the poster */
+
+.leftBtn{
+    position: absolute;
+    top: 60.7em;
+    left: 15px;
+    z-index: 2;
+}
+
+.leftBtn-2{
+    position: absolute;
+    top: 81.6em;
+    left: 15px;
+    z-index: 2;
+}
+
+.leftBtn-3{
+    position: absolute;
+    top: 119.8em;
+    left: 15px;
+    z-index: 2;
+}
+
+.rightBtn{
+    position: absolute;
+    top: 60.7em;
+    right: 15px;
+    z-index: 2;
+}
+
+.rightBtn-2{
+    position: absolute;
+    top: 81.6em;
+    right: 15px;
+    z-index: 2;
+}
+
+.rightBtn-3{
+    position: absolute;
+    top: 120em;
+    right: 15px;
+    z-index: 2;
+}
+
+.fadeRight{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 51.8em;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.fadeLeft{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 52.8em;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}
+
+.fadeRight-2{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 72em;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.fadeLeft-2{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 72em;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}
+
+.fadeRight-3{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 112em;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.fadeLeft-3{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 112em;
+    right: 0;
+    z-index: 1;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}

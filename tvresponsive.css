@@ -1,0 +1,107 @@
+@media only screen and (max-width: 828px){
+
+    .nav-link .dropdown {   
+        top: 52px;
+    }
+
+    .btn {
+        max-height: 2.9em;
+        max-width: 150px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .nav{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .nav__logo{
+        width: 93px;
+    }
+
+    .nav-left , .nav-right{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-links{
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav-link{
+        padding-left: 0px;
+    }
+
+    .nav-link a{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .nav-link .dropdown {   
+        top: 55px;
+    }
+
+    .btn {
+        margin-right: 20px;
+        max-height: 1.8em;
+        max-width: 100px;
+        font-size: 11px;
+    }
+
+    /*Poster*/
+
+    .row{
+        margin-left:10px ;
+    }
+
+    .firstRow{
+        padding-top: 5rem;
+    }
+
+    .titles{
+        padding-left: 10px;
+    }
+
+    /*Poster*/
+
+    .row{
+        margin-left:10px ;
+    }
+
+    .firstRow{
+        padding-top: 5rem;
+    }
+
+    .titles{
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+    .inputBox_container{
+        background: transparent;
+    }
+
+    .inputBox{
+        display: none;
+    }
+
+    .search_icon {
+        height: 23px;
+        padding: 0 0.5em 0 0.8em;
+        fill: white;
+    }
+
+    .btn {
+        margin-right: 250px;
+        max-height: 1.8em;
+        max-width: 100px;
+        font-size: 11px;
+    }
+
+}

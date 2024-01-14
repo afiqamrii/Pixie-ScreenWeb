@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #111;
+}
+
+.section {
+    display: flex;
+}
+
+.QRsec {
+    flex: auto;
+    background: url('images/bgqr.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.loginsec {
+    flex: auto;
+    background-color: #181616;
+}
+
+.logo {
+    margin-left: 15%;
+    margin-top: -155px;
+}
+
+.login{
+    margin-left: 20%;
+    margin-top: -130px;
+    padding-bottom: 10%;
+}
+
+.QRsec h1{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-top: 50%;
+}
+
+#qrcode{
+    max-height: 200px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.qr-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-left: 10%;
+}
+
+.wrapper{
+    width: 480px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+    color: #000000;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+.input-box i{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+
+.btn:hover{
+    color:cadetblue
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #d4d4d4;
+    margin:36px 0;
+}
+
+.line::before{
+    content: 'or login with';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #181616;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.media-options{
+    padding: 5px;
+}
+
+.media-options button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.facebook{
+    color: #fff;
+    background-color: #4267b2;
+    height: 30px;
+}
+
+button.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-icon{
+    position: absolute;
+    right: 58%;
+}
+
+.signin .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 87%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Full-width input fields */
+.signin input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: whitesmoke;
+}
+        
+/* Add a background color when the inputs get focus */
+.signin input[type=text]:focus, input[type=password]:focus {
+    background-color: #CACACA;
+    outline: none;
+}
+
+img.google-img{
+    position: absolute;
+    right: 58%;
+}
+
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+button.google{
+    border: 1px solid #CACACA;
+    background-color: #fff;
+    height: 30px;
+    color: black;
+}
+
+/*Sign up popup*/
+        
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+        
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+        
+/* Set a style for all buttons */
+button {
+    background-color: #088F8F;
+    color: whitesmoke;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+        
+button:hover {
+    opacity:1;
+}
+
+.signupbtn {
+    float: left;
+    width: 100%;
+    color: black;
+}
+        
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+        
+/* The Modal (background) */
+.signup .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+        
+/* Modal Content/Box */
+    .modal-content {
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+        
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+        
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .signupbtn {
+       width: 100%;
+    }
+  }
+
+/*Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.btnSignUp {
+    padding-top: 10px;
+    background-color: transparent;
+    border: 0.12em solid white;
+    border-radius: 0.4em;
+    color: white;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 550;
+    line-height: normal;
+
+    min-height: 2.8em;
+    min-width: 95px;
+    padding: 0.1em 1.9em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+   
+.btnSignUp:disabled {
+    pointer-events: none;
+}
+   
+.btnSignUp:hover {
+    color: #E39F33;
+    background-color: #000000;
+    border: 0.12em solid #E39F33;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+/*Follow Us*/
+
+.followUs{
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+    padding-right: 40px;
+}
+
+.title{
+    display: inline-block;
+    padding-left:55px;
+}
+
+.followUs li{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+}
+
+.followUs a i{
+    transition: all 0.3s ;
+    color: white;
+}
+
+a:hover i {
+    color:#E39F33 !important;
+    transform: scale(1.2);
+}
+
+.nav__logoFooter{
+    width: 75px;
+    object-fit: contain;
+}
+
+.copyrightFooter {
+    color: white;
+    font-size: 10px;
+    width: 70vh;
+    text-align: center;
+    padding: 15px; 
+}

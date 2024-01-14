@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixieScreen</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" sizes="48x48" href="images/titlelogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <div class="nav" id="nav">
+        <div class="nav-left">
+            <img src="images/logo.svg" alt="" class="nav__logo">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="homepage.html">Home</a></li>
+                <li class="nav-link movies">
+                    <a href="moviespage">Movies
+                        <span class="material-icons dropdown-icon">
+                            arrow_drop_down
+                        </span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="topmoviepage.html">Top Movies</a></li>
+                        <li><a href="genrepage.html">Genre</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="search-header">
+            <input placeholder="Search" class="search-header__input" type="text" />
+            <button class="search-header__button">
+              <svg
+                fill="none"
+                viewBox="0 0 18 18"
+                height="18"
+                width="18"
+                class="search-header__icon"
+              >
+                <path
+                  fill="#3A3A3A"
+                  d="M7.132 0C3.197 0 0 3.124 0 6.97c0 3.844 3.197 6.969 7.132 6.969 1.557 0 2.995-.49 4.169-1.32L16.82 18 18 16.847l-5.454-5.342a6.846 6.846 0 0 0 1.718-4.536C14.264 3.124 11.067 0 7.132 0zm0 .82c3.48 0 6.293 2.748 6.293 6.15 0 3.4-2.813 6.149-6.293 6.149S.839 10.37.839 6.969C.839 3.568 3.651.82 7.132.82z"
+                ></path>
+              </svg>
+            </button>
+            <div id="search-history-container"></div>
+          </div>
+          
+          
+              <li class="nav-link"><a href="myspace.html">mySpace</a></li>
+            <button class="btn">Login</button>
+        </div>
+    </div>
+    <div id="search-history-section">
+        <div class="current-search-term">
+            <strong> Search History:</strong> <span id="current-search-term"></span>
+        </div>
+        <div id="search-history"></div>
+    </div>
+ 
+    <div class="row">
+        <h2 class="titles">Top Search</h2>
+        <div class="poster-list">
+            <div class="movie-card">
+                <span class="poster-number">1.</span>
+                <img src="images/m1.jpg" alt="" class="row_poster">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn watchButton" data-video="https://dl.dropboxusercontent.com/scl/fi/8om855jbzgw4jmiy310x6/homecoming.mp4?rlkey=1jggpo54aev08nsxltt621ha5&dl=0">
+                                Watch
+                            </button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <span class="poster-number">2.</span>
+                <img src="images/m2.jpg" alt="" class="row_poster">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Dunkerk</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn watchButton" data-video="https://dl.dropboxusercontent.com/scl/fi/8om855jbzgw4jmiy310x6/homecoming.mp4?rlkey=1jggpo54aev08nsxltt621ha5&dl=0">
+                                Watch
+                            </button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Thriller</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <span class="poster-number">3.</span>
+                <img src="images/coming1.jpg" alt="" class="row_poster">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Johnny English (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn watchButton" data-video="https://dl.dropboxusercontent.com/scl/fi/8om855jbzgw4jmiy310x6/homecoming.mp4?rlkey=1jggpo54aev08nsxltt621ha5&dl=0">
+                                Watch
+                            </button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+            
+
+   <!-- footer -->
+   <footer>
+    <div class="btnFooter">
+        <button class="btnSignUp">Join Us Now</button>
+    </div>
+    <div class="footer-content">
+        <h3 class="followUs title">Follow Us</h3>
+        <ul class="followUs">
+            <li><a href=""><i class="fab fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fas fa-regular fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <a href="#nav"><img src="images/logo.svg" alt="" class="nav__logoFooter"></a>
+    </div>
+    <div class="footer-content">
+        <p class="copyrightFooter">Copyright &copy; 2023 Pixie Screen. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- link to the javascript file -->
+<script src="mainsc.js"></script>
+    </body>
+    </html>

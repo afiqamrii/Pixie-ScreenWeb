@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixieScreen</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" sizes="48x48" href="images/titlelogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="myspace.css">
+    <link rel="stylesheet" href="myspace.js">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <div class="nav" id="nav">
+        <div class="nav-left">
+            <img src="images/logo.svg" alt="" class="nav__logo">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="homepage.html">Home</a></li>
+                </ul>
+            </div>
+            <button class="btn"><a href="myspace.html">MySpace</a></button>
+        </div>
+    <!-- mySpace Section -->
+<div class="mySpace-section">
+    <!-- User Icon and Username -->
+    <div class="user-profile">
+        <i class="fas fa-user user-icon"></i>
+        <span class="username">Username</span>
+    </div>
+</div>
+
+<!--Playlist-->
+    <div class="row firstRow">
+        <h2 class="titles">Watchlist</h2>
+        <div class="leftBtn">
+            <a id="leftButton" href="#">
+                <i id="leftIcon" class="fas fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="fadeRight"></div>
+        <div class="row_posters">
+            <div id="video-poster">
+            <img src="images/Myspace/coming1.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+        
+            </div>
+        <div id="video-poster">
+            <img src="images/Myspace/coming2.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming3.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming4.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming5.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming6.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming7.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming8.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming9.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+            
+        </div>
+            <div id="video-poster">
+            <img src="images/Myspace/coming10.jpg" alt="" class="row_poster row_posterLarge">
+            <div id="continue-icon" onclick="togglePlayPause()">&#9658;</div>
+            <div id="pause-icon" onclick="togglePlayPause()" style="color: red;">&#10074;&#10074;</div>
+        
+        </div>
+        </div>
+        <div class="rightBtn">
+            <a id="rightBtn" href="#">
+                <i id="rightIcon" class="fas fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="fadeLeft"></div>
+    </div>
+
+    <!-- Download, Language, Help, Delete Account, Privacy, Logout Sections -->
+<div class="settings-section">
+    <!-- Download Section -->
+    <div class="settings-item">
+        <i class="fas fa-download settings-icon"></i>
+        <a href="#" class="settings-text">Download</a>
+        <button class="go-to-settings-button">
+            <i class=" fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Thin Line -->
+    <hr class="settings-line">
+
+    <!-- Language Section -->
+    <div class="settings-item">
+        <i class="fas fa-language settings-icon"></i>
+        <a href="#" class="settings-text">Language</a>
+        <button class="go-to-settings-button">
+            <i class=" fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Help Section -->
+    <div class="settings-item">
+        <i class="fas fa-question-circle settings-icon"></i>
+        <a href="#" class="settings-text">Help</a>
+        <button class="go-to-settings-button">
+            <i class=" fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Delete Account Section -->
+    <div class="settings-item">
+        <i class="fas fa-trash-alt settings-icon"></i>
+        <a href="#" class="settings-text">Delete Account</a>
+        <button class="go-to-settings-button">
+            <i class=" fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Thin Line -->
+    <hr class="settings-line">
+
+    <!-- Privacy Section -->
+    <div class="settings-item">
+        <i class="fas fa-lock settings-icon"></i>
+        <a href="#" class="settings-text">Privacy</a>
+        <button class="go-to-settings-button">
+            <i class=" fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- Logout Section -->
+    <div class="settings-item">
+        <i class="fas fa-sign-out-alt settings-icon"></i>
+        <a href="login.html" class="settings-text">Logout</a>
+        <button class="go-to-settings-button">
+            <i class=" fas fa-chevron-right"></i>
+        </button>
+    </div>
+</div>
+
+     <!-- footer -->
+   <footer>
+    <div class="footer-content">
+        <h3 class="followUs title">Follow Us</h3>
+        <ul class="followUs">
+            <li><a href=""><i class="fab fa-brands fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fas fa-regular fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-content">
+        <a href="#nav"><img src="images/logo.svg" alt="" class="nav__logoFooter"></a>
+    </div>
+    <div class="footer-content">
+        <p class="copyrightFooter">Copyright &copy; 2023 Pixie Screen. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- link to the javascript file -->
+<script src="myspace.js"></script>
+    </body>
+    </html>

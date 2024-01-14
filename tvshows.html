@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixieScreen</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" sizes="48x48" href="images/titlelogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="tvstyle.css">
+    <link rel="stylesheet" href="tvresponsive.css">
+    <link rel="stylesheet" href="tvshows.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body> 
+<div class="header">
+    <!-- Navigation -->
+    <div class="nav" id="nav">
+        <div class="nav-left">
+            <img src="images/logo.svg" alt="" class="nav__logo">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="homepage.html">Home</a></li> 
+                <li class="nav-link movies">
+                    <a href="moviespage.html">Movies
+                        <span class="material-icons dropdown-icon">
+                            arrow_drop_down
+                        </span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="topmoviepage.html">Top Movies</a></li>
+                        <li><a href="genrepage.html">Genre</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#">Tv Shows</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="inputBox_container">
+                <a href="#"> <!--add here to link the search icon to search page -->
+                    <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
+                        <path d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 
+                                 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 
+                                 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
+                        </path>
+                    </svg>
+                </a>
+                <input class="inputBox" id="inputBox" type="text" placeholder="Search">
+              </div>
+            <button class="btn"><a href="myspace.html">MySpace</a></button>
+        </div>
+    </div>
+</div> 
+
+    <!---slideshow-->
+    <div class="slider">
+
+		<div class="myslide fade">
+			<img src="images/TV Shows/1.jpg" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>Hidden Love</h1>
+				<p>Zhao Lusi, Chen Zheyuan</p>
+			</div>
+		</div>
+		
+		<div class="myslide fade">
+			<img src="images/TV Shows/2.webp" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>My Demon</h1>
+				<p>Kim Yoo Jung, Song Kang</p>
+			</div>
+		</div>
+		
+		<div class="myslide fade">
+			<img src="images/TV Shows/3.jpg" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>Falling Into Your Smile</h1>
+				<p>Cheng Xiao, Xu Kai</p>
+			</div>
+		</div>
+		
+		<div class="myslide fade">
+			<img src="images/TV Shows/4.avif" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>Perfect Marriage Revenge</h1>
+				<p>Jung Yoo Min, Sung Hoon</p>
+			</div>
+		</div>
+		
+		<div class="myslide fade">
+			<img src="images/TV Shows/5.webp" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>Lighter & Princess</h1>
+				<p>Zhang Jingyi, Chen Feiyu</p>
+			</div>
+		</div>
+
+        <div class="myslide fade">
+			<img src="images/TV Shows/6.jpg" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>See You In My 19th Life</h1>
+				<p>Shin Hye Sun, Ahn Bo Hyun</p>
+			</div>
+		</div>
+
+        <div class="myslide fade">
+			<img src="images/TV Shows/7.webp" style="width: 100%; height: 100%;">
+            <div class="txt">
+				<h1>When I Fly Towards You</h1>
+				<p>Zhang Miaoyi, Zhou Yiran</p>
+			</div>
+		</div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+		</div>
+    </div>
+
+    <!--Trending-->
+    <div class="row firstRow">
+        <h2 class="titles">Trending</h2>
+        
+        <div class="row_posters">
+
+            <div class="movie-card">
+                <img src="images/Trending/1.jpeg" alt="MD" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">My Demon (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Do Do Hee successor of the Future Group. 
+                        Do Do Hee gets involved with a demon named Jung Gu Won and makes a contract marriage with him.
+                        He gets involved with Do Do Hee and somehow loses his power. 
+                        To prevent his own extinction, he must protect Do Do Hee who has taken all of his power.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/2.jpg" alt="HL" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Hidden Love (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Sang Zhi fell in love with Duan Jia Xu, the boy who often comes to her house to play games in her older brother's room.
+                        Sang Zhi had a crush on Duan Jia Xu when she was young, but they lost contact afterwards. 
+                        Later, she attended the university at the city he is working at and they started to grow closer and slowly fall in love.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/3.jpg" alt="PMR" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Perfect Marriage Revenge (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Han Yi Joo who was adopted by Han Ji Woong and Lee Jung Hye.
+                        However she was not loved by her adopted family. 
+                        She approached Seo Do Guk whom Han Yoo Ra, her younger sister like.
+                        She proposed contract marriage to him. 
+                        Will he accept it?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Fantasy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/4.jpg" alt="L&P" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Lighter&Princess (2022)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Li Xun who entered college as top scorer of the national college entrance exams.
+                        Zhu Yun who just begun her college life ordinarily.
+                        They don't get along well. 
+                        But then, something happen that change their life completely.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Youth</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/5.jpg" alt="SYiM19L" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">See You in My 19th Life (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Ban Ji Eum has an extraordinary ability. 
+                        She can remember all her past lives. 
+                        After her previous life is cut short by a tragic accident, she sets out to reconnect with the people of her past life in her current one.
+                        Will memories of her 18th life sabotage romance in her 19th? Or will love endure across different lives?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Fantasy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/6.jpg" alt="FIYS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Falling into Your Smile (2021)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">ZGDX OPL captain, Lu Si Cheng. 
+                        A popular player inside and outside the gaming world for his good gaming skill and handsome face.
+                        The lollipop lover Tong Yao who obsessed with OPL have an exceptionally good skills. 
+                        What will happen to her as first ever female player playing professionally.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sports</span>
+                            <span class="tag">Youth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/7.jpg" alt="DC" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Doctor Cha (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Cha Jung Sook is married to Seo In Ho, who works as a chief surgeon at a university hospital.
+                        Cha Jung Sook has been a full time housewife for 20 years giving up her career as a doctor during her medical resident years.
+                        After all those years, she decides to restart her medical resident course.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Medical</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/8.jpg" alt="WIFTY" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">When I Fly Towards You (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Su Zai Zai encounters the aloof and cool Zhang Lu Rang and falls in love with him at first sight.
+                        Behind Zhang Lu Rang's outstanding academic performance, he constantly doubts himself on the inside.
+                        However his life's change when he meet bubbly and straightforward Su Zai Zai.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/9.jpg" alt=ToNT" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Tale of Nine Tailed 1938 (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">An unexpected case leads Lee Yeon back in time, where he reencounters Ryu Hoog Joo,
+                        once a guardian spirit of the mountain in the west and another former guardian spirit also an ex-friend, Chen Moo Young.
+                        Lee Yeon struggle to return to the present.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Horror</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Trending/10.jpg" alt="TaHaJR" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Time and Him are Just Right (2022)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">The stubborn, adorable Lin Xi approaches the crafty top student Ji Jun Xing on purpose. 
+                        Throughtout their opportunistic friendship, feeling blossom between the two as they make their own dreams and goals come true together.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Youth</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Variety Show-->
+    <div class="row secondRow">
+        <h2 class="titles">Variety Show</h2>
+        <div class="row_posters">
+
+            <div class="movie-card">
+                <img src="images/Variety Show/1.jpg" alt="KR" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Keep Running S9</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A reality-variety show that stars 7 regular members. 
+                        In each episode, they must complete missions at famous landmarks to win the race. 
+                        The missions almost always feature running, hence the title.
+                        Cast members also engage in name tag-ripping.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/2.webp" alt="TN" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Next 2023</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">26 performers, who are at different stages in their music careers as well as in life, 
+                        step up on stage to perform as their authentic selves. 
+                        Through different challenges, they compete against the others to earn a spot in the top 5.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Competition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/3.jpg" alt="TRoS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Return of Superman</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Celebrity dads are left to care for their kids alone for 48 hours without the help of anyone, while their wives leave the home to enjoy some relaxing time off. 
+                        Occasionally celebrity friends of the dads will stop by to interact with the kids. 
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Relationship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/4.jpg" alt="RM" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Running Man</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">In each episode, the members must compete in a series of games and missions to win the race. 
+                        As they fight to win prizes and avoid penalties, the members show their chemistry with each other and the celebrity guests that occasionally join.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/5.jpeg" alt="BS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Big Stage</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A reality show for singer who just started their career as a singer and didn't make their name big yet.
+                        Big Stage features the young talents in the music industry.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">2/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Competition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/6.webp" alt="TINBS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Indonesian Next Big Star</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Competition program searching for talented singer to be The Next Indonesian Big Star.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Competition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/7.jpeg" alt="HS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Heart Signal S2</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">They say love has its own language and these men and women of the Signal House will live together in one house to find someone they like.
+                        Essentially, they're left to send their own indirect signals to the one who catches their eyes, and hope that person will pick up on the hint.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Dating Show</span>
+                            <span class="tag">Relationship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/8.jpg" alt="TYP" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Youth Periplous S3</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Youth Periplous takes the audience to explore beautiful sceneries, regional foods and local history across China. 
+                        From the lens of civilian perspectives, the show gives the city a new channel to show itself more comprehensively. 
+                        Insisting on bringing the culture and spirit of different cities to the audience with passion and showing the heart of the city to everyone.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Travel</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/9.jpeg" alt="MOM" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Men On Mission</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">It is a sitcom talk show program set in a school. 
+                        In each episode, new celebrity guests appear as transfer students at the 'Brother School' where seven mischievous brother students wait for them. 
+                        The show consists of several dynamic sessions. 
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Variety Show/10.jpg" alt="HS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Hello Summer</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Young adults who come together on an island on the lookout for love. 
+                        The contestants will live together in a pair of 2's, each in different houses.
+                        Can these aspiring young adults convey their feelings?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Dating Show</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Drama-->
+    <div class="row thirdRow">
+        <h2 class="titles">Drama</h2>
+        <div class="row_posters">
+
+            <div class="movie-card">
+                <img src="images/Drama/1.jpg" alt="YAD" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">You Are Desire (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">After Lin Yu Jing's parent divorce, she and her dad moved to a new city where she become seat mates 
+                        with ill-tempered Shen Juan. They get reacquainted, seperated and reunited again in university.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Youth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/2.jpg" alt="FL" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Faceless Love (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Veekji a young CEO with prosopagnosia or 'face blindness' meaning he can't distinguish people's faces.
+                        For this reason, he decide to hire an assistant to help cennect him with the world. 
+                        Mirin becomes the girl responsible for that. Will his condition be cured?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/3.jpg" alt="UL" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Unforgettable Love (2021)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">He Qiao Yan, CEO of Heshi Group and Qin Yi Yue, a child psychologist.
+                        A rational, indifferent man and a soft optimistic, considerate, meticulous psychologist whose relationship 
+                        develops from acquaintance to love.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/4.jpg" alt="TFD" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Furthest Distance (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Qin Yun Sheng is an emergency doctor, who has a house that need to be renovated 
+                        and Su Ying is a focused interior designer. They meet because of their participation in a house renovation
+                        reality tv show. Will the short meeting be able to capture the two heart?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/5.jpg" alt="TB" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">True Beauty (2020)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Lim Ju Gyeong who rises to pretty girl fame after she masters the art of makeup from youtube.
+                        Lee Su Ho is an attractive and handsome boy who appears cold because of his dark past but actually very caring.
+                        They grow when they share their secrets and find love with each other.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Youth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/6.jpg" alt="MHIL" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">My Husband in Law (2020)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">The smart and multi talented Muey lives with her crush, Thien for over seven years.
+                        How will their relationship fare when Muey begins working at the same company? 
+                        Is love possible for them in these circumstances?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Business</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/7.jpg" alt="SW" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">So Wayree (2020)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Two real estate moguls who are sworn enemies are competing with each other to become the top in the industry. 
+                        Parin never thought he would be part of the hatred. Growing up he never knew what having father was like.
+                        Paramita the sole heiress of the famous real estate company. 
+                        Parin and Paramita standing on opposite side of the line as enemies. 
+                        Will they find love in each other?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Business</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/8.jpg" alt="SILY" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Shh... I Love You (2017)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Nadia who got heart donated from Sumayyah, Aidan late fiance.
+                        Few years later Aidan and Nadia keep run into each other. 
+                        Will Aidan and Nadia know the truth about the heart donator?
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/9.jpg" alt="LAP" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Love All Play (2022)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Park Tae Joon who naturally wound up in the world of badminton because of his parents badminton equipment business.
+                        Park Tae Yang is a former aspiring Olymoian who had to leave badminton world for three year due to bribing scandal.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sports</span>
+                            <span class="tag">Youth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Drama/10.jpg" alt="PM" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Praomook (2021)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">As a part of a supertitious marriage to ward off bad luck, 
+                        teenagers Praomook and Chalantorn are temporarily married to help Chalantorn's luck.
+                        Years later, they meet again at South Korea where Chalantorn gets shot. 
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Romance</span>
+                            <span class="tag">Revenge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Popular Celebrities-->
+    <div class="celebrow">
+        <h2>Popular Celebrities</h2>
+        <div class="row_celeb celeb">
+            <img src="images/celeb/1.jpeg" alt="" class="celeb">
+            <img src="images/celeb/2.jpeg" alt="" class="celeb">
+            <img src="images/celeb/3.jpeg" alt="" class="celeb">
+            <img src="images/celeb/4.jpeg" alt="" class="celeb">
+            <img src="images/celeb/5.jpeg" alt="" class="celeb">
+            <img src="images/celeb/6.jpeg" alt="" class="celeb">
+        </div>
+    </div>
+
+    <!--TV Series-->
+    <div class="row fourthRow">
+        <h2 class="titles">TV Series</h2>
+        <div class="row_posters">
+
+            <div class="movie-card">
+                <img src="images/TV Series/1.jpeg" alt="FOP" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Fairly Odd Parents</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Timmy Turner, a young boy who is neglected by his parents and bullied
+                        by his babysitter. However, his life takes an adventourous turn when he is granted two fairy 
+                        godparents who fulfil his wishes.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Fantasy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/2.jpeg" alt="SS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Spongebob Squarepants</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A yellow sea sponge named Spongebob Squarepants, who enjoys being a cook 
+                        at Krusty Krab. Lives in the Pacific Ocean. He embarks on various adventures with his friends at Bikini Bottom.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/3.jpeg" alt="HD" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Henry Danger</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Henry Hart, a thirteen year old boy who works secretly as Kid Danger, a sidekick
+                        to superhero Captain Man, strives hard to protect his own exploits from being discovered by his family and friends.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/4.jpg" alt="HS" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Hunter Street</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">When Erik and Kate disappear, their foster children, Max, Sal, Anika, Tess and Daniel
+                        get together and team up to find them.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/5.jpeg" alt="TM" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Thundermans</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Max and Phoebe are the Thunderman twins who belong to a super cool family
+                        of superhumans. While Phoebe wants to use her abilities for good, Max is hell-bent on becoming a villain.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Adventure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/6.jpg" alt="iC" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">iCarly</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Carly Shay finds her previously normal life turned upside down when her 
+                        internet show, 'iCarly' becomes an instant smash with young Web heads. 
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Family</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/7.jpg" alt="F" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">F.R.I.E.N.D.S</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Follow the lives of six reckless adults living in Manhattan as they
+                        indulge in adventures which make their lives both troublesame and happpening.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Friendship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="movie-card">
+                <img src="images/TV Series/8.jpeg" alt="NRDD" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Nicky, Ricky, Dicky & Dawn</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Quadruplets Nicky, Ricky, Dicky and Dawn Harper, though different from 
+                        each other, come up with interesting solutions for all their problems. However they often engage 
+                        in serious sibling rivalry
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Family</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/9.jpeg" alt="LH" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Loud House</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">In a family of 10 sisters and relatives, Lincoln Loud a young and 
+                        innocent boy finds different creative ways with his best friend to survive.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Family</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/TV Series/10.jpeg" alt="DP" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Danny Phantom</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Danny Fenton was once your typical kid until he accidentally blew up 
+                        his parents laboratory and became a ghose hunting superhero Danny Phantom.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Fantasy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Top 10 Drama in Your Region-->
+    <div class="row forthRow">
+        <h2 class="titles">Top 10 Drama in Your Region</h2>
+        <div class="row_posters">
+
+            <div class="movie-card">
+                <img src="images/Top 10/1.jpg" alt="W" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">W (2016)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Oh Yeon Joo mysteriously goes missing while writing the last chapter of his father webtoon "W".
+                        Yeon Joo goes to his office but suddenly a hand from his monitor pull her in. She finds herself on the rooftop of a building.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <span class="rate">5/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/2.jpg" alt="MUF" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Melur Untuk Firdaus (2022)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Firdaus didn't agree with his parents plan to marry him off with Melur because he already has a girlfriend, Dee.
+                        His parents give him 48 hours to marry Dee but isn't ready to marry yet. 
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">2/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/3.jpg" alt="KTL" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">King The Land (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Heir Goo Won cannot stand fake smiles. When he meets Cheon Sa Rang, her sincere smile is at the ready.
+                        The pair seek to create happy moments where they can smile brightly at each other. Cheon Sa Rang make the world brighter with just her smile.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/4.webp" alt="WASFIL" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">When a Snail Falls in Love</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Heir Goo Won cannot stand fake smiles. When he meets Cheon Sa Rang, her sincere smile is at the ready.
+                        The pair seek to create happy moments where they can smile brightly at each other. Cheon Sa Rang make the world brighter with just her smile.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/5.jpg" alt="SWK" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">South Wind Knows (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A doctor and CEO meets at a wild forest in a country that have dangerous disease.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/6.jpg" alt="The Legend of Blue Sea" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">The Legend of the Blue Sea (2016)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A mermaid and a scammer meet in a foreign country and fell in love with each other.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/7.jpg" alt="The Legend of Blue Sea" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Fireworks of My Heart (2023)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">Song Yan a firefighter and Xu Qin a doctor meet each other again after few years they broke up.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/8.jpg" alt="The Legend of Blue Sea" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Descendants of the Sun (2016)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A drama about a doctor and a soldier meet each other again in a foreign country with a non stop earthquake
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Top 10/9.jpg" alt="The Legend of Blue Sea" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">F4 Thailand (2022)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">An adaptation from Korean Drama 'Boys Over Flower'
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">3/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Comedy</span>
+                            <span class="tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        <div class="footer-content">
+            <h3 class="followUs title">Follow Us</h3>
+            <ul class="followUs">
+                <li><a href=""><i class="fab fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fas fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <a href="#nav"><img src="images/logo.svg" alt="" class="nav__logoFooter"></a>
+        </div>
+        <div class="footer-content">
+            <p class="copyrightFooter">Copyright &copy; 2023 Pixie Screen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!--javascript-->
+    <script src="tvshows.js"></script>     
+</body>
+</html>
