@@ -358,8 +358,13 @@
         padding: 0 0.5em 0 0.8em;
         fill: white;
     }
+
+    .nav-right{
+        display: none;
+    }
     
     .btn {
+        display: none;
         font-size: 7px; 
         font-weight: 550;
         line-height: normal;
