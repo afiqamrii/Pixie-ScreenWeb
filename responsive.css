@@ -339,10 +339,20 @@
 
 }
 
+ /*Phone Resolution*/
 @media only screen and (width <= 450px) {
     
     .nav__logo{
         width: 75px;
+    }
+
+    .dropdown-icon{
+        top: -8px;
+        font-size: 2px;
+    }
+    
+    .nav-link .dropdown {   
+        top: 39px;
     }
 
     .inputBox_container{
@@ -471,5 +481,68 @@
         font-size: 15px;
         padding-left: 15px;
      }
+
+    /* Fade of the button */
+
+    .fadeRight{
+        width: 30px;
+        height: 225px;
+        top: 25em;
+    }
+
+    .fadeLeft{
+        width: 35px;
+        height: 225px;
+        top: 25em;
+    }
+
+    .fadeRight-2{
+        width: 30px;
+        height: 225px;
+        top: 40em;
+    }
+
+    .fadeLeft-2{
+        width: 35px;
+        height: 225px;
+        top: 40em;
+    }
+
+    .fadeRight-3{
+        width: 30px;
+        height: 280px;
+        top: 55.2em;
+    }
+
+    .fadeLeft-3{
+        width: 35px;
+        height: 280px;
+        top: 55.2em;
+    }
+
+    .fadeRight-4{
+        width: 30px;
+        height: 225px;
+        top: 74em;
+    }
+
+    .fadeLeft-4{
+        width: 35px;
+        height: 225px;
+        top: 74em;
+    }
+
+    .fadeRight-5{
+        width: 30px;
+        height: 225px;
+        top: 89em;
+    }
+
+    .fadeLeft-5{
+        width: 35px;
+        height: 225px;
+        top: 89em;
+    }
+
     
     }
