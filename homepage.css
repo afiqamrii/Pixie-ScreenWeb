@@ -1,0 +1,154 @@
+/* Posters */
+
+.row{
+    color: white;
+    margin-left:20px ;
+}
+
+.firstRow{
+    padding-top: 16rem;
+}
+
+.titles{
+    padding-left: 20px;
+    font-size: 22px;
+}
+
+/* Button to swipe the poster */
+
+.leftBtn{
+    position: absolute;
+    top: 60.7em;
+    left: 15px;
+    z-index: 6;
+}
+
+.leftBtn-2{
+    position: absolute;
+    top: 81.4em;
+    left: 15px;
+    z-index: 6;
+}
+
+.leftBtn-3{
+    position: absolute;
+    top: 119.9em;
+    left: 15px;
+    z-index: 6;
+}
+
+.leftBtn-4{
+    position: absolute;
+    top: 140.2em;
+    left: 15px;
+    z-index: 6;
+}
+
+.rightBtn{
+    position: absolute;
+    top: 60.7em;
+    right: 15px;
+    z-index: 6;
+}
+
+.rightBtn-2{
+    position: absolute;
+    top: 81.4em;
+    right: 15px;
+    z-index: 6;
+}
+
+.rightBtn-3{
+    position: absolute;
+    top: 119.9em;
+    right: 15px;
+    z-index: 6;
+}
+
+.rightBtn-4{
+    position: absolute;
+    top: 140.2em;
+    right: 15px;
+    z-index: 6;
+}
+
+.fadeRight{
+    position: absolute;
+    width: 50px;
+    height: 300px;
+    top: 51.8em;
+    left: 0;
+    z-index: 2;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.fadeLeft{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 52.8em;
+    right: 0;
+    z-index: 5;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}
+
+.fadeRight-2{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 72em;
+    left: 0;
+    z-index: 5;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.fadeLeft-2{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 72em;
+    right: 0;
+    z-index: 5;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}
+
+.fadeRight-3{
+    position: absolute;
+    width: 57px;
+    height: 310px;
+    top: 110.2em;
+    left: 0;
+    z-index: 5;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+.fadeLeft-3{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 112em;
+    right: 0;
+    z-index: 5;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}
+
+.fadeRight-4{
+    position: absolute;
+    width: 57px;
+    height: 300px;
+    top: 131.2em;
+    left: 0;
+    z-index: 5;
+    background-image: linear-gradient(to left, transparent, #111, #111);
+}
+
+
+.fadeLeft-4{
+    position: absolute;
+    width: 55px;
+    height: 300px;
+    top: 131.2em;
+    right: 0;
+    z-index: 5;
+    background-image: linear-gradient(to right, transparent, #111, #111);
+}

@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
+    z-index: 999; 
+}
+
+.nav-left , .nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right{
+    gap: 2.1em;
+}
+
+.nav__logo{
+    width: 100px;
+    object-fit: contain;
+}
+
+.nav__black{
+    /* background-color: #000; */
+    background-image: linear-gradient(to top,transparent,#111,#000);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    /* transition: all 2s ease-in-out; */
+}
+
+.nav-link{
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.movies a{
+    display: flex;
+}
+
+.dropdown-icon {
+    font-size: 10px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.movies:hover .dropdown-icon{
+    transform: rotate(180deg);
+}
+
+/* Dropdown option */
+
+.nav-link .dropdown li{
+    display: block;
+}
+
+.nav-link .dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 70px;
+}
+
+.nav-link a:hover{
+    color: #E39F33;
+    border-radius: 0.5rem;
+}
+
+.movies:hover ul.dropdown{ 
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.3s;
+    font-size: 18px;
+} 
+
+.inputBox_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 11em;
+    width: fit-content;
+    height: 42px;
+    background: transparent;
+    border-radius: 0.5em;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.inputBox_container:hover{
+    background-color: #111;
+    
+}
+
+.search_icon {
+    height: 1em;
+    padding: 0 0.5em 0 0.8em;
+    fill: #abb2bf;
+}
+
+.inputBox {
+background-color: transparent;
+color: white;
+outline: none;
+width: 150%;
+border: 0;
+padding: 0.5em 1.5em 0.5em 0;
+font-size: 1em;
+}
+
+::placeholder {
+color: #abb2bf;
+}
+
+.btn {
+    appearance: none;
+    background-color: transparent;
+    border: 0.12em solid white;
+    border-radius: 0.4em;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 550;
+    line-height: normal;
+    margin: 0;
+    margin-right: 20px;
+    min-height: 2.8em;
+    min-width: 95px;
+    outline: none;
+    padding: 0.1em 1.9em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .btn:disabled {
+    pointer-events: none;
+   }
+   
+   .btn:hover {
+    color: #E39F33;
+    background-color: #000000;
+    border: 0.12em solid #E39F33;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+   }
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+
+.banner__video{
+    position: absolute;
+    top: -99px;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 165%;
+    opacity: 0.5;
+    z-index: -999;
+}
+
+.videoslider .navigation{
+    position: absolute;
+    bottom: -50px;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoslider .navigation li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    padding: 3px 3px 0;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.videoslider .navigation li:hover{
+    opacity: 1;
+}
+
+.videoslider .navigation li img{
+    width: 110px;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+.videoslider .navigation li img:hover{
+    width: 125px;
+}
+
+.banner__contents {
+    position: relative;
+    margin-left: 70px;
+    padding-top: 100px;
+    height: 200px;
+}
+
+.mute {
+    position: absolute;
+    top: 29rem;
+    left: 6px;
+}
+
+
+.banner__title img{
+    width: 22rem;
+    height: auto;
+}
+
+.banner__description{
+    width: 70rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    max-width: 360px;
+    height: 180px;
+}
+
+.banner__button{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.5vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.banner__button:hover{
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+} 
+
+.banner-bookmark{
+    margin-right: 3px;
+}
+
+.banner--fadeBottom {
+    position: absolute;
+    bottom: -265px;
+    width: 100%;
+    height: 8.4rem;
+    background-image: linear-gradient(180deg, transparent, #111, #111);
+}
+
+.row_poster{
+    max-width: 200px;
+    padding-top: 0px;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 9px;
+    margin: 10px;
+    transition: transform 450ms;
+}
+
+.row_poster-land{
+    transition: transform 450ms;
+}
+
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    transition: scroll-behavior 450ms;
+}
+.row_poster:hover{
+    transform:scale(1.28);
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+.row_posterLarge{
+    max-height: 250px;
+    border-radius: 0.3rem;
+    z-index: 1;
+}
+
+.row_posterLarge-land{
+    max-height: 250px;
+    max-width: 500px;
+    border-radius: 0.3rem;
+    z-index: 1;
+}
+
+.directors{
+    position: absolute;
+    padding-left: 20px;
+}
+
+.bestDirector{
+    max-height: 250px;
+    padding-left: 0px;
+    max-width : 250px;
+    padding-left: -90px;
+    margin-right: -40px;
+    clip-path: circle();
+}
+
+.row_posterLarge:hover{
+    transform: scale(1.09);
+}
+
+/* Movie Card Hover to display information of movie*/
+
+.movie-card {
+    display: flex;
+    position: relative;
+    object-fit: contain; 
+    margin: 0 21px;
+} 
+
+.movie-card img{
+    margin: 0 -15px; 
+} 
+
+.movie-info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top,#000,#111 50%,transparent);
+    width: 124%;
+    height: 110%;
+    color: white;
+    margin-left: -17px;
+    padding: 10px;
+    border-radius: 0.5rem;
+    transform: scale(1); 
+    transition: transform 45ms;
+}
+
+.movie-info-land {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to top,#000,#111 50%,transparent);
+    width: 400px;
+    height: 260px;
+    color: white;
+    margin-left: 8px;
+    padding: 10px;
+    border-radius: 0.8rem;
+    transform: scale(1); 
+    transition: transform 45ms;
+}
+
+.movie-card:hover .movie-info {
+    display: block;
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.movie-card:hover .movie-info-land {
+    display: block;
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.movie-card:hover .row_poster {
+    transform: scale(1.2);
+    filter: blur(0.9px);
+    z-index: 2;
+}
+
+/*For Landscape poster*/
+.movie-card:hover .row_poster-land {
+    transform: scale(1.07);
+    filter: blur(0.9px);
+    z-index: 2;
+}
+
+.movie-details{
+    margin-top: 65px;
+}
+
+
+.movie-title{
+    font-size: 14px;
+}
+
+.movie-btns{
+    display: flex;
+}
+
+.movie-btn{
+    margin-top: 10px;
+
+}
+
+.movie-btn{
+    cursor: pointer;
+    color: black;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 8.3px;
+    border-radius: 0.3em;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-right: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background-color: white;
+}
+
+.fa-bookmark {
+    padding: 3px;
+}
+
+.fa-star{
+    margin-right: -2px;
+}
+.movie-btn:hover{
+    color: #000;
+    background-color: #E39F33;
+    transition: all 0.2s;
+} 
+
+.synopsis{
+    font-size: 8.5px;
+    margin-top: 10px;
+}
+
+.rating{
+    position: relative;
+    padding: 3px 0;
+}
+
+.rating .fa-star{
+    color: rgb(213, 190, 58);
+    font-size: 9px;
+}
+
+.rate{
+    font-size: 9px;
+}
+
+.tags span{
+    padding: 0.2em 0.25em;
+    color: #fff;
+    font-size: 8.2px;
+    border-radius: 0.3em;
+    border: 1.7px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.btnSignUp {
+    padding-top: 10px;
+    background-color: transparent;
+    border: 0.12em solid white;
+    border-radius: 0.4em;
+    color: white;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 550;
+    line-height: normal;
+
+    min-height: 2.8em;
+    min-width: 95px;
+    padding: 0.1em 1.9em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+   
+.btnSignUp:disabled {
+    pointer-events: none;
+}
+   
+.btnSignUp:hover {
+    color: #E39F33;
+    background-color: #000000;
+    border: 0.12em solid #E39F33;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+/* Follow Us */
+
+.followUs{
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+}
+
+.title{
+    display: inline-block;
+    padding-left:20px;
+}
+
+.followUs li{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    list-style: none;
+}
+
+.followUs a i{
+    transition: all 0.3s ;
+}
+
+a:hover i {
+    color:#E39F33 !important;
+    transform: scale(1.2);
+}
+
+.nav__logoFooter{
+    width: 75px;
+    object-fit: contain;
+}
+
+.copyrightFooter {
+    color: white;
+    font-size: 10px;
+    width: 70vh;
+    text-align: center;
+    padding: 15px; 
+}
+
+
+
+
+

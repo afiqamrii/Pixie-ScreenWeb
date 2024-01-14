@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixieScreen</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/titlelogo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="movies.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <div class="nav" id="nav">
+        <div class="nav-left">
+            <img src="images/logo.svg" alt="" class="nav__logo">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link movies">
+                    <a href="#">Movies
+                        <span class="material-icons dropdown-icon" style="font-size: 28px;">
+                            arrow_drop_down
+                        </span>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="topmoviepage.html">Top Movies</a></li>
+                        <li><a href="genrepage.html">Genre</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link"><a href="#">Tv Shows</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="inputBox_container">
+                <a href="#"> <!--add here to link the search icon to search page -->
+                    <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
+                        <path d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 
+                                 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 
+                                 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
+                        </path>
+                    </svg>
+                </a>
+                <input class="inputBox" id="inputBox" type="text" placeholder="Search">
+              </div>
+            <button class="btn">Join Now</button>
+        </div>
+    </div>
+
+    <!--Header-->
+    <div class="banner" id="banner">
+        <!-- <img class="banner__image" src="images/home2.jpg" alt=""> -->
+        <div class="videoslider">
+            <video id="banner-video" class="banner__video" autoplay loop muted>
+                <source src="images/Trailer/indianajones.mp4">
+            </video>
+            <ul class="navigation">
+                <li onclick="changeVideo(3)"><img src="images/thumbnail/indianajonesthumb.jpeg"></li>
+                <li onclick="changeVideo(4)"><img src="images/thumbnail/endgamethumb.webp"></li>
+                <li onclick="changeVideo(5)"><img src="images/thumbnail/homecomingthumb.avif"></li>
+            </ul>
+        </div>
+
+        <div class="banner__contents">
+            <h1 class="banner__title">
+                <img src="images/titles/indianajones.webp" alt="">
+            </h1>
+            <div class="banner__buttons">
+                <button class="banner__button">Play</button>
+                <button class="banner__button"><i class="banner-bookmark fa-solid fa-bookmark"></i>My List</button>
+            </div>
+            <div class="banner__description">
+                Experience the return of legendary hero, Indiana Jones, in the fifth installment of this beloved swashbuckling 
+                series of films. Finding himself in a new era, approaching retirement, Indy wrestles with fitting into a world that 
+                seems to have outgrown him. 
+            </div>
+            <div class="mute">
+                <a id="muteButton" href="#">
+                    <i id="muteIcon" class="fas fa-volume-mute"></i>
+                </a>
+            </div>
+        </div>
+        <div class="banner--fadeBottom"></div>
+    </div>
+
+    <!--New Releases-->
+    <div class="row firstRow">
+        <h2 class="titles">New Releases</h2>
+        <div class="leftBtn">
+            <a id="leftButton" href="#">
+                <i id="leftIcon" class="fas fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="fadeRight"></div>
+        <div class="row_posters">
+
+            <!-- Start of movie card -->
+
+            <div class="movie-card">
+                <img src="images/New Releases/1.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/2.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/3.webp" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/4.webp" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/5.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/6.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/7.jpeg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/8.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/9.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/New Releases/10.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End of movies cards-->
+
+        </div>
+        <div class="rightBtn">
+            <a id="rightBtn" href="#">
+                <i id="rightIcon" class="fas fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="fadeLeft"></div>
+    </div>
+    
+    <!--Best Movies by Actor's-->
+    <div class="row secondRow">
+        <h2 class="titles">Best Movies by Actor's</h2>
+        <div class="leftBtn-2">
+            <a id="leftButton2" href="#">
+                <i id="leftIcon2" class="fas fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="fadeRight-2"></div>
+        <div class="row_posters">
+
+            <!-- Start of movie card -->
+
+            <div class="movie-card">
+                <img src="images/Bestactor/1.jpeg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/2.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/3.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/4.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/5.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/6.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/7.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/8.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/9.jpg " alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Bestactor/10.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End of movies cards-->
+
+        </div>
+        <div class="rightBtn-2">
+            <a id="rightBtn2" href="#">
+                <i id="rightIcon2" class="fas fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="fadeLeft-2"></div>
+    </div>
+
+    <!--Mission Impossible Collections-->
+    <div class="row thirdRow">
+        <h2 class="titles">Mission Impossible Collections</h2>
+        <div class="leftBtn-3">
+            <a id="leftButton3" href="#">
+                <i id="leftIcon3" class="fas fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="fadeRight-3"></div>
+        <div class="row_posters">
+
+            <!-- Start of movie card -->
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/1.jpg" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/2.jpg" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/3.jpg" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/4.jpg" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/5.webp" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/6.webp" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MissionImpossible/7.avif" alt="" class="row_poster-land row_posterLarge-land">
+                <div class="movie-info-land">
+                    <div class="movie-details"> 
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of movies cards-->
+        <div class="rightBtn-3">
+            <a id="rightBtn3" href="#">
+                <i id="rightIcon3" class="fas fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="fadeLeft-3"></div>
+    </div>
+
+    <!--Marvel's Superheroes-->
+    <div class="row fourthRow">
+        <h2 class="titles">Marvel's Superheroes</h2>
+        <div class="leftBtn-4">
+            <a id="leftButton4" href="#">
+                <i id="leftIcon4" class="fas fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="fadeRight-4"></div>
+        <div class="row_posters">
+
+            <!-- Start of movie card -->
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/1.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/2.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/3.jpeg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/4.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/5.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/6.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/7.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/8.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/MarvelSuper/9.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="images/MarvelSuper/10.webp" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                           symbiotes who have invaded Earth. But the being takes a liking to 
+                           Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- End of movies cards-->
+        <div class="rightBtn-4">
+            <a id="rightBtn4" href="#">
+                <i id="rightIcon4" class="fas fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="fadeLeft-4"></div>
+    </div>
+    
+    <!--Documentaries-->
+    <div class="row fifthRow">
+        <h2 class="titles">Documentaries</h2>
+        <div class="leftBtn-5">
+            <a id="leftButton5" href="#">
+                <i id="leftIcon5" class="fas fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div class="fadeRight-5"></div>
+        <div class="row_posters">
+
+            <!-- Start of movie card -->
+
+            <div class="movie-card">
+                <img src="images/Documentaries/1.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Documentaries/2.webp" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/3.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/4.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/5.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/6.webp" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/7.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/8.webp" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="movie-card">
+                <img src="images/Documentaries/9.jpeg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <img src="images/Documentaries/10.jpg" alt="" class="row_poster row_posterLarge">
+                <div class="movie-info">
+                    <div class="movie-details">
+                        <p class="movie-title">Venom (2018)</p>
+                        <div class="movie-btns">
+                            <button class="movie-btn">Watch</button>
+                            <button class="movie-btn"><i class="fa-solid fa-bookmark"></i>Watchlist</button>
+                        </div>
+                        <p class="synopsis">A failed reporter is bonded to an alien entity, one of many 
+                            symbiotes who have invaded Earth. But the being takes a liking to 
+                            Earth and decides to protect it.
+                        </p>
+                        <div class="rating">
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fas fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="rate">4/5</span>
+                        </div>
+                        <div class="tags">
+                            <span class="tag">Sci-Fi</span>
+                            <span class="tag">Action</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End of movies cards-->
+        <div class="rightBtn-5">
+            <a id="rightBtn5" href="#">
+                <i id="rightIcon5" class="fas fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+        <div class="fadeLeft-5"></div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="btnFooter">
+            <button class="btnSignUp">Join Us Now</button>
+        </div>
+        <div class="footer-content">
+            <h3 class="followUs title">Follow Us</h3>
+            <ul class="followUs">
+                <li><a href=""><i class="fab fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fas fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <a href="#"><img src="images/logo.svg" alt="" class="nav__logoFooter"></a>
+        </div>
+        <div class="footer-content">
+            <p class="copyrightFooter">Copyright &copy; 2023 Pixie Screen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- link to the javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+@media only screen and (max-width: 828px){
+
+    .nav-link .dropdown {   
+        top: 52px;
+    }
+
+    .btn {
+        max-height: 2.9em;
+        max-width: 150px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .nav{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .nav__logo{
+        width: 93px;
+    }
+
+    .nav-left , .nav-right{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-links{
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .nav-link{
+        padding-left: 0px;
+    }
+
+    .nav-link a{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .nav-link .dropdown {   
+        top: 55px;
+    }
+
+    .btn {
+        margin-right: 20px;
+        max-height: 1.8em;
+        max-width: 100px;
+        font-size: 11px;
+    }
+
+
+    /*Banner*/
+    
+    .banner {
+        height: 224px;
+    }
+
+    .videoslider .navigation{
+        position: absolute;
+        bottom: 48px;
+        left: 76%;
+        transform: translateX(-50%);
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .videoslider .navigation li{
+        margin: 0 5px;
+        border-radius: 4px;
+        padding: 3px 3px 0;
+        opacity: 0.7;
+        transition: 0.5s;
+    }
+
+    .videoslider .navigation li img{
+        width: 70px;
+        border-radius: 9px;
+        transition: 0.5s;
+    }
+
+    .banner__contents {
+        padding-top: 4px;
+        height: 100px;
+    }
+
+    .banner__video{
+        position: absolute;
+        top: -110px;
+        object-fit: cover;
+    } 
+
+    .banner__title img{
+        width: 8rem;
+        height: auto;
+
+    }
+
+    .banner__description{
+        width: 26rem;
+        font-size: 9px;
+        padding-top: 1.2rem;
+        max-width: 300px;
+    }
+
+    .banner__button{
+        padding-left: 1rem; 
+        padding-right: 1rem; 
+        margin-right: 1rem;
+        padding-top: 0.25rem; 
+        padding-bottom: 0.25rem; 
+    }
+
+    .banner--fadeBottom {
+        top: 9.2em;
+        bottom: -1px;
+        width: 100%;
+        height: 8.4rem;
+        z-index: -1;
+        background-image: linear-gradient(180deg, transparent, rgba(37,37,37,0.61), #111);
+    }
+
+    /*Poster*/
+
+    .row{
+        margin-left:10px ;
+    }
+
+    .firstRow{
+        padding-top: 5rem;
+    }
+
+    .titles{
+        padding-left: 10px;
+    }
+
+/* Button to swipe the poster */
+
+.leftBtn{
+    top: 32.7em;
+}
+
+.rightBtn{
+    top: 32.7em;
+}
+
+.leftBtn-2{
+    top: 49em;
+}
+
+.rightBtn-2{
+    top: 49em;
+}
+
+.leftBtn-3{
+    top: 78em;
+}
+
+.rightBtn-3{
+    top: 78em;
+}
+
+/* Fade of the button */
+
+.fadeRight{
+    width: 30px;
+    height: 225px;
+    top: 27em;
+}
+
+.fadeLeft{
+    width: 35px;
+    height: 225px;
+    top: 27em;
+}
+
+.fadeRight-2{
+    width: 30px;
+    height: 225px;
+    top: 43em;
+}
+
+.fadeLeft-2{
+    width: 35px;
+    height: 225px;
+    top: 43em;
+}
+
+.fadeRight-3{
+    width: 30px;
+    height: 225px;
+    top: 72em;
+}
+
+.fadeLeft-3{
+    width: 35px;
+    height: 225px;
+    top: 72em;
+}
+
+    .row_poster{
+        max-height: 50px;
+        margin-right: 5px;
+    }
+
+    .row_posters{
+        padding: 10px;
+    }
+
+    .row_posterLarge{
+        max-height: 200px;
+    }
+
+    .bestDirector{
+        max-height: 185px;
+        max-width : 185px;
+        padding-left: -45px;
+        margin-right: -20px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+.inputBox_container{
+    background: transparent;
+}
+
+.inputBox{
+    display: none;
+}
+
+.search_icon {
+    height: 23px;
+    padding: 0 0.5em 0 0.8em;
+    fill: white;
+}
+
+.btn {
+    margin-right: 250px;
+    max-height: 1.8em;
+    max-width: 100px;
+    font-size: 11px;
+}
+
+}
