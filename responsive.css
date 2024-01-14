@@ -340,7 +340,7 @@
 }
 
  /*Phone Resolution*/
-@media only screen and (width <= 450px) {
+@media only screen and (width <= 500px) {
     
     .nav__logo{
         width: 75px;
@@ -349,6 +349,10 @@
     .dropdown-icon{
         top: -8px;
         font-size: 2px;
+    }
+
+    .nav-right{
+        margin-left: 30px;
     }
     
     .nav-link .dropdown {   
@@ -364,8 +368,8 @@
     }
     
     .search_icon {
-        height: 15px;
-        padding: 0 0.5em 0 0.8em;
+        height: 10px;
+        padding: 0 0.3em 0 0.5em;
         fill: white;
     }
     
