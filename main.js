@@ -237,13 +237,13 @@ var videos = [
     },
     //10
     {
-        videoUrl: 'gangstercoptrailer.mp4',
+        videoUrl: 'images/Trailer/gangstercoptrailer.mp4',
         titleUrl: 'images/titles/gangstercoptitle.png',
         description: 'A strange murder after a car accident compels a police officer to think that it is the work of a serial killer. When a gangster falls prey to a similar incident, he joins forces with the officer.'
     },
     //11
     {
-        videoUrl: 'jackreachertrailer.mp4',
+        videoUrl: 'images/Trailer/jackreachertrailer.mp4',
         titleUrl: 'images/titles/jackreachertitle.png',
         description: 'An ex-military police investigator sets out to prove the innocence of the head of his old unit when she is accused of treason. In his task, he discovers a major government conspiracy.'
     },
