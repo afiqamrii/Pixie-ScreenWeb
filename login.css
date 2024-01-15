@@ -423,7 +423,7 @@ footer {
 
 .title{
     display: inline-block;
-    padding-left:55px;
+    align-items: center;
 }
 
 .followUs li{
