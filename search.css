@@ -192,6 +192,13 @@ color: #f0f2f6;
    .btn:disabled {
     pointer-events: none;
    }
+
+   .btn a{
+    font-size: 15px;
+   }
+   a:hover{
+    color: #E39F33;  
+   }
    
    .btn:hover {
     color: #E39F33;

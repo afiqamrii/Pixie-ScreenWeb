@@ -145,8 +145,8 @@ watchButtons.forEach(function(button) {
         // Get the video file from the data-video attribute
         var videoFile = button.dataset.video;
 
-        // Navigate to videoPlayer.html with the video file as a URL parameter
-        window.location.href = 'videoPlayer.html?video=' + encodeURIComponent(videoFile);
+        // Open the video file in the same tab
+        window.location.href = videoFile;
     });
 });
 

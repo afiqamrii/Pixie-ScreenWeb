@@ -1,13 +1,3 @@
-// Add these JavaScript functions to your existing file or create a new one
-
-// Function to toggle QR icon display
-function toggleQRIcon() {
-    var qrIcon = document.querySelector('.qr-icon');
-    qrIcon.classList.toggle('show');
-}
-
-// Add an event listener to the QR icon for toggling
-document.querySelector('.qr-icon').addEventListener('click', toggleQRIcon);
 // left right button for poster
 
 window.onload = function() {
@@ -68,17 +58,6 @@ function togglePlayPause() {
     continueIcon.style.display = continueIcon.style.display === 'none' ? 'block' : 'none';
     pauseIcon.style.display = pauseIcon.style.display === 'none' ? 'block' : 'none';
 
-    // Add your logic for playing/pausing the video here
-    // For example, you can use the HTML5 video element and its play/pause methods
-    // var videoElement = document.getElementById('your-video-element-id');
-    // videoElement.paused ? videoElement.play() : videoElement.pause();
-}
-
 // Add an event listener to the continue icon for toggling play/pause
 document.getElementById('continue-icon').addEventListener('click', togglePlayPause);
-
-// You can also add similar logic to pause the video when the pause icon is clicked
-// document.getElementById('pause-icon').addEventListener('click', togglePlayPause);
-
-
-
+}

@@ -1,3 +1,17 @@
+//Black fade will appear if scrolling
+const nav = document.getElementById('nav');
+
+window.addEventListener('scroll',() => {
+    if(window.scrollY >=100){
+        nav.classList.add("nav__black");
+    } else{
+        nav.classList.remove("nav__black")
+    }
+})
+
+
+
+
 const myslide = document.querySelectorAll('.myslide'),
 	dot = document.querySelectorAll('.dot');
 let counter = 1;
