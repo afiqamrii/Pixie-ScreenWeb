@@ -98,6 +98,11 @@ a{
     transition: all ease 0.3s;
     font-size: 18px;
 } 
+
+.mySpacetitle{
+    color: white;
+    padding-left: 15px;
+}
 /* Add these styles to your existing CSS file or create a new one */
 .mySpace-section {
     display: flex;
