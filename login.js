@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to generate QR code and handle redirection
 function generateQRCode() {
     // URL of the page you want to redirect to
-    var redirectURL = "http://127.0.0.1:5500/tvshows.html"; //tukar link ni to home
+    var redirectURL = "homepage.html";
     
     // Get the QR code container element
     var qrcodeContainer = document.getElementById("qrcode");
